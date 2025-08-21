@@ -138,6 +138,13 @@
                 </div>
             </div>
         </div>
+        <p>I have read the <a class="modal-trigger" href="#terms">Terms and conditons</a></p>
+    </div>
+    <div class="modal" id="terms">
+        <div class="container">
+            <h5>Terms and conditon</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur dolorum laudantium nostrum hic. Illum reprehenderit, sunt officia eligendi ratione odit fugit laboriosam repellat, saepe nostrum exercitationem? Numquam dignissimos earum ab magnam tempore sequi sunt excepturi iure dolores itaque nobis maiores hic, eligendi id error deserunt culpa, architecto laudantium repudiandae incidunt.</p>
+        </div>
     </div>
     </body>
     <script src="js/jquery.js"></script>
@@ -145,11 +152,13 @@
     <script>
         $(document).ready(function(){
             $('.materialboxed').materialbox();
+            $('.modal').modal();
             $('.slider').slider({
                 height:300,
                 indicators:false,
                 interval:1000
             });
+
         });
     </script>
 </html>
