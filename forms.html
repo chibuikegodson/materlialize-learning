@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/materialize.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Forms</h1>
+        <div class="row">
+            <div class="col s12 m6 l3 input-field">
+                <label for="first-name">first name</label>
+                <input type="text" placeholder="eg-michael">
+            </div>
+            <div class="col s12 m6 l3 input-field">
+                <input type="text" placeholder="Last Name">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 m6 l4 input-field">
+                <i class="material-icons prefix">mail</i>
+                <input type="email" id="email">
+                <label for="email"> Email </label>
+            </div>
+            <div class="col s12 m6 l4 input-field">
+                <i class="material-icons prefix">lock</i>
+                <label for="password">Password</label>
+                <input type="password">
+            </div>
+            <div class="col s12 m6 l4 input-field">
+                <i class="material-icons prefix">lock</i>
+                <label for="password">Confirm password</label>
+                <input type="password">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 m6 l4 input-field">
+                <i class="material-icons prefix">people</i>
+                <select name="gender"  id="gender">
+                    <option value="">Select Gender</option>
+                    <option value="">Male</option>
+                    <option value="">Female</option>
+                    <option value="">Rather not say</option>
+                </select>
+            </div>
+            <div class="col s12 m6 l4 input-field">
+                <i class="material-icons prefix">person</i>
+                <select name=""  id="">
+                    <option value="">Select martial status </option>
+                    <option value="">Married</option>
+                    <option value="">Single</option>
+                    <option value="">Divorced</option>
+                    <option value="">Widowed</option>
+                    <option value="">Rather not say</option>
+                </select>
+            </div>
+            <div class="col s12 m6 l4 input-field">
+                <i class="material-icons prefix">person_outline</i>
+                <select name=""  id="">
+                    <option value="">Select Religion </option>
+                    <option value="">Christain</option>
+                    <option value="">Muslim</option>
+                    <option value="">Others</option>
+                    <option value="">Rather not say</option>
+                </select>
+            </div>
+            <div class="row">
+                <div class="col s12 m6 l4 input-field">
+                    <h5>Days of training</h5>
+                    <p>
+                        <label>
+                            <input type="checkbox" />
+                            <span>Monday</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox" />
+                            <span>Tuesday</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox" />
+                            <span>Wednesday</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox" />
+                            <span>Thursday</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox" />
+                            <span>Friday</span>
+                        </label>
+                    </p>
+                </div>
+                <div class="col s12 m6 l4">
+                    Are u disabled?
+                    <p>
+                        <label>
+                            <input name="group 1" checked type="radio" />
+                            <span class="black-text">Yes</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input name="group 1" checked type="radio" />
+                            <span class="black-text">No</span>
+                        </label>
+                    </p>
+                </div>
+                <div class="col s12 m6 l4 input-field">
+                    <input type="date" class="datepicker">
+                    <label for="">Date of birth</label>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/jquery.js"></script>
+<script src="js/materialize.js"></script>
+<script>
+    $(document).ready(function(){
+        $('select').formSelect();
+        $('.datepicker').datepicker();
+        })
+</script>
+</html>
